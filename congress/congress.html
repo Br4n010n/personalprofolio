@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Members of Congress</title>
+</head>
+<body>
+    <header>
+    <h1> Welcome to my members of Congress page!</h1>
+    <div>
+        <h3>The most senior member of congress is <span id="seniorMember"></span></h3>
+        <h3>The biggest vacationer in the entire congress is <span id="vacationer"></span></h3>
+        <ul id="loyalMembers"></ul>
+    </div>
+    <section class="filterArea">
+    <fieldset>
+        <legend>Sort Congress Members:</legend>
+        <div>
+            <input type="checkbox" id="senate" name="senate">
+          <label for="senate">Senators</label>
+        </div>
+    
+        <div>
+            <input type="checkbox" id="house" name="house" checked>
+          <label for="house">Representatives</label>
+        </div>
+    
+    </fieldset>
+    <fieldset>
+      <legend>Filter by Party:</legend>
+      <div>
+        <input type="radio" id="repubs" name="party">
+        <label for="repubs">Republicans</label>
+      </div>
+  
+      <div>
+        <input type="radio" id="dems" name="party">
+        <label for="dems">Democrats</label>
+      </div>
+      <button id="partyReset" class="resetButton">Reset</button>
+    </fieldset>
+    <fieldset>
+      <legend>Filter by Gender:</legend>
+@@ -52,6 +53,7 @@ <h3>The biggest vacationer in the entire congress is <span id="vacationer"></spa
+        <input type="radio" id="men" name="gender">
+        <label for="men">Male</label>
+      </div>
+      <button id="genderReset" class="resetButton">Reset</button>
+    </fieldset>
+  </section>
+</header>
+<main>
+    <div class="membersDiv"></div>
+</main>
+<footer>
+    <h3>&copy; Brandon Thomas educations use only 2022</h3>
+</footer>
+    <script src="congress.js" type="module"></script>
+</body>
+</html>

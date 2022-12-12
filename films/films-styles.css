@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #34401A;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+figure img {
+    max-width: 300px;
+}
+
+figcaption {
+    background-color: #64732F;
+    color: #B4BF5E;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 70% 10%;
+}
