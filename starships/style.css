@@ -1,0 +1,29 @@
+* {
+    margin: 1px;
+    padding: .2rem
+;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+}
+
+.shipViewer {
+    background-color: #B4BF5E;
+    height: 100vh;
+}
+
+.navList {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+a {
+    text-decoration: dashed;
+    font-size: x-large;
+}
+
+li {
+    padding: .25rem;
+}
