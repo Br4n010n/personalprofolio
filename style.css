@@ -7,6 +7,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 #navbar {
     display: flex;
     justify-content: flex-end;
@@ -26,7 +28,7 @@ body {
     text-decoration: none;
     color: #34401A;
     display: block;
-    /* font-size: 1.5rem; */
+    
     padding: 1rem;
 }
 
@@ -68,7 +70,7 @@ figure img {
 }
 
 figcaption {
-    background-color: dimgrey;
+    background-color: #34401A;
     color: beige;
     text-align: center;
     padding: 10px 0px;
