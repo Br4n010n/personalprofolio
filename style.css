@@ -47,6 +47,7 @@ body {
 
 #projects {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #64732F;
 }
@@ -106,7 +107,6 @@ figcaption {
 }
 
 footer {
-    /* text-align center; */
     background-color: #84B026;
     padding: 1rem;
 }
