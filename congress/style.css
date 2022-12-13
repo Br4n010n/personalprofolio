@@ -110,6 +110,25 @@ fieldset {
     color: #B4BF5E;
     font-size: larger;
   }
+
+  nav a {
+    display: block;
+    padding: 1.2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #b6ff2e;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: solid #34401a; 
+}
+
+nav a:hover {
+  color: #000100;
+  border: solid #415810;
+  background-color: #34401a;
+} 
+
   footer {
     width: 100%;
     position: fixed;
