@@ -3,12 +3,15 @@
     padding: .2rem
     
     
+    
 ;
     box-sizing: border-box;
+    
 }
 
 main {
     display: flex;
+    
    
 }
 
@@ -17,7 +20,8 @@ main {
 
 body{
     background: url("/images/firespray.jpg");
-    background-repeat: repeat;
+    background-repeat: repeat repeat-y;
+ 
 }
 .navList {
     list-style-type: none;
@@ -44,6 +48,8 @@ nav a:hover {
 a {
     text-decoration: dashed;
     font-size: x-large;
+    
+    
 }
 
 nav ul {
@@ -52,11 +58,31 @@ nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    
 }
+
+img {
+    position: fixed;
+    display: flex;
+}
+
 
 
   
 li {
     padding: .25rem;
     
+    
+}
+html {    
+    background: url('image.png') no-repeat center fixed;     
+    background-size: cover;
+}
+
+figcaption {
+    background-color: #64732F;
+    color: #B4BF5E;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 70% 10%;
 }

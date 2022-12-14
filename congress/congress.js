@@ -62,7 +62,7 @@ function populateMembersDiv(memberArray) {
         const figImg = document.createElement('img')
         const figCaption = document.createElement('figcaption')
         figImg.src = member.imgURL
-        figImg.addEventListener('error', () => figImg.src = '../images/emperor-palpatine.jpeg')
+        figImg.addEventListener('error', () => figImg.src = '../images/wookie.jpg')
         figCaption.textContent = member.name
 
         figure.appendChild(figImg)

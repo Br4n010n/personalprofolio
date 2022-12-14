@@ -6,7 +6,7 @@
 }
 
 header {
-  text-align: center;
+  text-align: left;
   background-color: #64732F;
 }
 
@@ -32,17 +32,19 @@ fieldset {
   width: 100%;
   margin-top: .5rem;
   background-color: #64732F;
+  
 }
 .membersDiv {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+   
 }
 .scene {
     width: 200px;
     height: 270px;
     
-    margin: 2rem .25rem;
+    margin: 3rem .25rem;
     perspective: 600px;
     border-radius: 10px;
   }
@@ -53,7 +55,10 @@ fieldset {
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
-    border-radius: 10px;
+    border-radius: 12px;
+    font-size: larger;
+    text-align: center;
+    
   }
   
   .card.is-flipped {
@@ -71,6 +76,7 @@ fieldset {
   .card__face--front {
    
     border-radius: 10px;
+
   }
 
   body {
@@ -94,22 +100,33 @@ fieldset {
   }
   .republican {
     background-color: #B4BF5E;
+    
   }
   .democrat {
     background-color: #B4BF5E;
   }
   figure {
     border-radius: 10px;
+      max-width: 300px;
+  
+
   }
+
+
   figure img {
-    border-radius: 10px;
+    border-radius: 9px;
+    margin: 1.7rem;
+    
+    
+    
   }
   figcaption {
-    text-align: center;
-    font-weight: 700;
+    background-color: #34401A;
     color: #B4BF5E;
-    font-size: larger;
-  }
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 80% 10%;
+}
 
   nav a {
     display: block;
@@ -126,14 +143,30 @@ fieldset {
 nav a:hover {
   color: #000100;
   border: solid #415810;
-  background-color: #34401a;
+  background-color: #34401a
 } 
 
-  footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
+img:hover {
+  box-shadow: 0px 0px 10px rgb(57, 57, 206);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0 2vw;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+ 
+  figcaption {
     background-color: #64732F;
-    color: #EEE;
-  }
+    color: #B4BF5E;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 70% 10%;
+    
+}
+
+
+

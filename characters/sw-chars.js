@@ -2,6 +2,7 @@ import { people } from '../data/people.js'
 const header = document.querySelector('header')
 const main = document.querySelector('main')
 
+
 const allCharsButton = document.createElement('button')
 allCharsButton.textContent = 'All Characters'
 allCharsButton.addEventListener('click', function () {
@@ -12,8 +13,7 @@ const maleCharacters = people.filter((person) => person.gender === 'male')
 const femaleCharacters = people.filter((person) => person.gender === 'female')
 const otherCharacters = people.filter((person) => person.gender !== 'female' && person.gender !== 'male')
 
-// !false
-// It's funny because it's true
+
 
 const maleCharsButton = document.createElement('button')
 maleCharsButton.textContent = 'Male Characters'
@@ -33,20 +33,20 @@ header.appendChild(femaleCharsButton)
 header.appendChild(otherCharsButton)
 
 function populateDOM(characters) {
- 
+  while (main.firstChild) { // remove all children before our forEach appends them all
+    main.removeChild(main.firstChild)
+  }
   characters.forEach((person) => {
     let figure = document.createElement('figure')
     let figImage = document.createElement('img')
     let figCaption = document.createElement('figcaption')
-
     let charNum = getLastNumber(person.url)
-
     figImage.src = `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
     figCaption.textContent = person.name
-
     figure.appendChild(figImage)
     figure.appendChild(figCaption)
     main.appendChild(figure)
+
 
   })
 }
@@ -57,8 +57,9 @@ function getLastNumber(url) {
     let end = url.lastIndexOf('/')
     let start = end - 2
     if (url.charAt(start) === '/') {
+       
       start++
     }
     return url.slice(start, end)
-  }
-  populateDOM(people)
+}
+  
